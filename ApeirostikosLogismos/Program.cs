@@ -6,10 +6,19 @@ namespace ApeirostikosLogismos
     {
         static void Main(string[] args)
         {
-            #region Number e
-            Console.WriteLine("The number e!");
-
             ApeiII model = new ApeiII();
+
+            // Find Number e
+            Number_e(model);
+        }
+
+        /// <summary>
+        /// Number e
+        /// </summary>
+        /// <param name="model"></param>
+        private static void Number_e(ApeiII model)
+        {
+            Console.WriteLine("The number e!");
 
             decimal e = 1;
             for (int k = 1; k < 9; k++)
@@ -18,9 +27,13 @@ namespace ApeirostikosLogismos
             }
 
             Console.WriteLine("Number e = " + e);
-            #endregion
         }
 
+        /// <summary>
+        /// Factorial 
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public decimal Factorial(long n)
         {
             long F = 1;
